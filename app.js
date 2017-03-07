@@ -8,7 +8,7 @@ var mongo = require('mongodb');
 var mongoose = require('mongoose');
 var db = mongoose.connection;
 
-mongoose.connect('mongodb://localhost/knowledgebase');
+mongoose.connect('mongodb://gavmac:282820@ds123050.mlab.com:23050/crud-app');
 
 var routes = require('./routes/index');
 var articles = require('./routes/articles');
