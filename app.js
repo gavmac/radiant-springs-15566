@@ -9,7 +9,7 @@ var mongoose = require('mongoose');
 var db = mongoose.connection;
 
 mongoose.connect("mongodb://gavmac:282820@ds123410.mlab.com:23410/heroku_xqftk5t1", function(error){
-  if(error) console.log("Not right now buddy");
+  if(error) console.log(error);
   else console.log('mongo connected');
 });
 
