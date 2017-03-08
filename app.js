@@ -8,7 +8,7 @@ var mongo = require('mongodb');
 var mongoose = require('mongoose');
 var db = mongoose.connection;
 
-mongoose.connect(process.env.MONGOLAB_URI. function(error){
+mongoose.connect(process.env.MONGOLAB_URI, function(error){
   if(error) console.error(error);
   else console.log('mongo connected');
 });
