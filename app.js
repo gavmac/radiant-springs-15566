@@ -9,7 +9,7 @@ var mongoose = require('mongoose');
 var db = mongoose.connection;
 
 mongoose.connect(process.env.MONGOLAB_URI, function(error){
-  if(error) console.log("Not right now buddy"));
+  if(error) console.log("Not right now buddy");
   else console.log('mongo connected');
 });
 
