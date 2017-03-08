@@ -8,7 +8,10 @@ var mongo = require('mongodb');
 var mongoose = require('mongoose');
 var db = mongoose.connection;
 
-mongoose.connect('mongodb://gavmac:282820@ds123050.mlab.com:23050/crud-app');
+mongoose.connect(process.env.MONGOLAB_URI. function (error){
+  if(error) console.error(error);
+  else console.log('mongo connected');
+});
 
 var routes = require('./routes/index');
 var articles = require('./routes/articles');
