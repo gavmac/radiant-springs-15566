@@ -8,7 +8,6 @@ var mongo = require('mongodb');
 var mongoose = require('mongoose');
 var db = mongoose.connection;
 
-mongoose.Promise = global.Promise;
 mongoose.connect("mongodb://gav:282820@ds123050.mlab.com:23050/crud-app", function(error){
   if(error) console.log(error);
   else console.log('mongo connected');
