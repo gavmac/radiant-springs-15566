@@ -8,6 +8,7 @@ var mongo = require('mongodb');
 var mongoose = require('mongoose');
 var db = mongoose.connection;
 
+// mongoose.connect('mongodb://localhost/knowledgebase');
 mongoose.connect('mongodb://heroku_xqftk5t1:m8skgdne6vtdblgoii1naovang@ds123410.mlab.com:23410/heroku_xqftk5t1');
 
 var routes = require('./routes/index');
