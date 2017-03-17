@@ -8,7 +8,7 @@ var mongo = require('mongodb');
 var mongoose = require('mongoose');
 var db = mongoose.connection;
 
-mongoose.connect('mongodb://gavmac:((282820))gG@ds123410.mlab.com:23410/heroku_xqftk5t1');
+mongoose.connect('mongodb://gavmac:((282820))gG@ds123050.mlab.com:23050/crud-app');
 
 var routes = require('./routes/index');
 var articles = require('./routes/articles');
